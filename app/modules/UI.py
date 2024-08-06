@@ -84,13 +84,13 @@ def generate_ui(llm, retrieval_chain):
     # ######
     # # UI #
     # ######
-    sami = "🐯"
-    user = "🐱"
+    sami = "🐰"
+    user = "🤷🏻"
 
-    st.title("💬 SAM")
-    st.image("./img/logo_cat.png", width=200)
-    st.title("[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/Sabrina240597/Sabrina-Bonomo-Proyecto-Integrador)")
-    st.caption("🚀 A Streamlit chatbot powered by OpenAI, Wikipedia and Youtube")
+    st.title("💬 SAMI")
+    st.image("./img/sami-2-fotor-bg-remover-20240805153947.png", width=200)
+    st.title("[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/Sabrina240597/StreamlitLangchainBot)")
+    st.caption("⭐​ Un chatbot de Streamlit impulsado por OpenAI, Wikipedia y YouTube ⭐​")
 
     if "messages" not in st.session_state:
         st.session_state["messages"] = [{"role": "assistant", "content": "En que puedo ayudar hoy?"}]
@@ -115,7 +115,7 @@ def generate_ui(llm, retrieval_chain):
 
         elif "youtube" in prompt.lower():
             with st.chat_message("assistant", avatar=sami):
-                st.write("Un momento, busco videos en YouTube...🐱✨▶️")
+                st.write("Un momento, busco videos en YouTube...🐰​✨▶️")
 
                 pattern = r"[\'\[\]]"
                 urls = context_youtube(llm, retrieval_chain, prompt, st.session_state["chat_history"])
