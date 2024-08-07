@@ -1,67 +1,63 @@
 
 ---
 
-# SAM - Streamlit Chatbot powered by LangChain and OpenAI
+# SAMI - Chatbot con Streamlit potenciado por LangChain y OpenAI
 
 <img src="./app/img/SAMI-basic-fotor-bg-remover-20240805154142.png" width="200"></img>
 
-## Description
+## Descripción
 
-SAMI is a chatbot developed with Streamlit, LangChain, and OpenAI, designed to provide useful and entertaining responses to users. This project demonstrates how to integrate large language models (LLMs) and OpenAI APIs to create an interactive and fun experience.
+SAMI es un chatbot desarrollado con Streamlit, LangChain y OpenAI, diseñado para proporcionar respuestas útiles y entretenidas a los usuarios. Este proyecto demuestra cómo integrar modelos de lenguaje grande (LLMs) y las API de OpenAI para crear una experiencia interactiva y divertida.
 
-## Features
+## Características
 
-- **User Interface with Streamlit:** A simple and friendly UI for interacting with the chatbot.
-- **Integration with OpenAI:** Uses the GPT-3.5-turbo (configurable) model from OpenAI to generate responses.
-- **Conversation Context:** Maintains the conversation history to offer coherent and contextually relevant responses.
-- **Embeddings and Document Retrieval:** Uses advanced embedding techniques and information retrieval to improve response accuracy.
-- **Personalized Responses:** The personality can be configured via the **config.json** file.
-
+- **Interfaz de Usuario con Streamlit:** Una interfaz simple y amigable para interactuar con el chatbot.
+- **Integración con OpenAI:** Utiliza el modelo GPT-3.5-turbo (configurable) de OpenAI para generar respuestas.
+- **Contexto de Conversación:** Mantiene el historial de la conversación para ofrecer respuestas coherentes y contextualmente relevantes.
+- **Embeddings y Recuperación de Documentos:** Utiliza técnicas avanzadas de embeddings y recuperación de información para mejorar la precisión de las respuestas.
+- **Respuestas Personalizadas:** La personalidad puede configurarse a través del archivo **config.json.**
 ## Installation
 
-1. **Clone the repository:**
+1. **Instalación:**
     ```bash
-    git clone https://github.com/Luisarg03/StreamlitLangchainBot
+    git clone https://github.com/Sabrina240597/StreamlitLangchainBot
     ```
 
-2. **Create a virtual environment:**
+2. **Crear un entorno virtual:**
     ```bash
     python -m venv myenv
     ```
 
-3. **Activate the environment (Windows):**
+3. **Activar el entorno (Windows):**
     ```bash
     source myenv/bin/activate
     ```
 
-4. **Install dependencies:**
+4. **Instalar dependencias:**
     ```bash
     pip install -r requirements.txt
     ```
 
-5. **Set up environment variables:**
-    - Create a `.env` file in the project's root directory and add your OpenAI API key:
+5. **Configurar variables de entorno:**
+    - Crea un archivo .env en el directorio raíz del proyecto y agrega tu clave API de OpenAI:
     ```env
     API_KEY=your_api_key
     ```
 
-6. **Run the application:**
+6. **Ejecutar la aplicación:**
     ```bash
     streamlit run main.py
     ```
 
 ## Usage
 
-1. **Start the application:** Run the command `streamlit run main.py`.
-2. **Pdfs:** By default, the documents passed as context are located in the *./pdfs* folder.
-3. **Interaction:** Enter your questions or comments in the chat interface, and SAM will respond with personalized answers.
+1. **Iniciar la aplicación:** Ejecuta el comando 'streamlit run main.py'.
+2. **Pdfs:** Por defecto, los documentos pasados como contexto están ubicados en la carpeta *./pdfs.*
+3. **Interacción:** Ingresa tus preguntas o comentarios en la interfaz de chat, y SAMI responderá con respuestas personalizadas.
 
-# Diagrams
+# Diagrama
 
 <img src="./docs/img/ChatBotArq.png"></img>
 
-## License
-
-This project is licensed under the MIT License. See the LICENSE file for more details.
 
 ---
