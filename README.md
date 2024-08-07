@@ -3,7 +3,7 @@
 
 # SAM - Streamlit Chatbot powered by LangChain and OpenAI
 
-<img src="./learningdoc/img/logo_cat.png" width="200"></img>
+<img src="./app/img/SAMI-basic-fotor-bg-remover-20240805154142.png" width="200"></img>
 
 ## Description
 
